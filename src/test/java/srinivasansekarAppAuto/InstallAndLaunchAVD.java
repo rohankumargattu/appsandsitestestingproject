@@ -21,7 +21,7 @@ public class InstallAndLaunchAVD
 		dc.setCapability("deviceName","emulator-5554");
 		dc.setCapability("platformName","android");
 		dc.setCapability("platformVersion","5.1.1");
-		dc.setCapability("app","C:\\Users\\gattu\\Downloads\\temp.apk");
+		dc.setCapability("app","C:\\Users\\gattu\\Downloads\\VodQA.apk");
 		
 		//Object Creation
 		AndroidDriver driver;

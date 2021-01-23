@@ -21,7 +21,7 @@ public class InstallAndLaunchARD
 		dc.setCapability("deviceName","192.168.1.3:1992");
 		dc.setCapability("platformName","android");
 		dc.setCapability("platformVersion","8.0.0");
-		dc.setCapability("app","C:\\Users\\gattu\\Downloads\\temp.apk");
+		dc.setCapability("app","C:\\Users\\gattu\\Downloads\\VodQA.apk");
 		
 		//Object Creation
 		AndroidDriver driver;
