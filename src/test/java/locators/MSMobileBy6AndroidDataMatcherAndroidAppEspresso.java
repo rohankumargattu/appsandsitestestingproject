@@ -13,7 +13,7 @@ public class MSMobileBy6AndroidDataMatcherAndroidAppEspresso
 		driver.findElementByAndroidDataMatcher("hamcrest matcher code").click();
 		*/
 		
-		//Hancrest(JSON based JAVA) code
+		//Hamcrest(JSON based JAVA) code
 		/*
 		{
 			"name":"hasEntry",
