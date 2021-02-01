@@ -53,7 +53,7 @@ public class GetPageSourceUiAutomator2
 			System.out.println(ex.getMessage());
 		}
 		//Close App
-		driver.quit();
+		driver.closeApp();
 		//Stop appium server
 		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
 		Runtime.getRuntime().exec("taskkill /F /IM cmd.exe"); 

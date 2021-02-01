@@ -20,11 +20,13 @@ public class GetPageSourceEspresso
 		DesiredCapabilities dc=new DesiredCapabilities();
 		dc.setCapability(CapabilityType.BROWSER_NAME,"");
 		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME,AutomationName.ESPRESSO);
-		dc.setCapability("forceEspressoRebuild","true");
+		dc.setCapability("forceEspressRebuild","true");
 		dc.setCapability("showGradleLog","true");
-	    dc.setCapability("deviceName","emulator-5554");
+		dc.setCapability("autoGrantPermissions","true");
+		dc.setCapability("adbExecTimeout","40000");
+	    dc.setCapability("deviceName","ce081718334a5b0b05");
 	    dc.setCapability("platformName","android");
-	    dc.setCapability("platformVersion","8.1.0");
+	    dc.setCapability("platformVersion","8.0.0");
 		dc.setCapability("appPackage","com.vodqareactnative");
 	    dc.setCapability("appActivity","com.vodqareactnative.MainActivity");
 		//Launch app in device through appium server
