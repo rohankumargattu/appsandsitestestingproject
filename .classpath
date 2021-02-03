@@ -50,5 +50,15 @@
 	<classpathentry kind="lib" path="E:/Automation/Tess4j_jar_files-3.0.0/slf4j-api-1.7.7.jar"/>
 	<classpathentry kind="lib" path="E:/Automation/Tess4j_jar_files-3.0.0/tess4j-3.0.0.jar"/>
 	<classpathentry kind="lib" path="E:/Automation/Tess4j_jar_files-3.0.0/xmlgraphics-commons-1.4.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/cmu_time_awb.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/cmu_us_kal.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/cmudict04.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/cmulex.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/cmutimelex.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/en_us.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/freetts.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/freetts-jsapi10.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/jsapi.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/mbrola.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

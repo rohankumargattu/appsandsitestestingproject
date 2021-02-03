@@ -1,4 +1,4 @@
-package srinivasansekarAppAuto;
+package mobilegestures;
 
 import java.net.URL;
 import java.time.Duration;
