@@ -60,5 +60,6 @@
 	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/freetts-jsapi10.jar"/>
 	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/jsapi.jar"/>
 	<classpathentry kind="lib" path="E:/Automation/freetts-1.2.2-bin/freetts-1.2/lib/mbrola.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/sikulix jar/sikulixapi.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
