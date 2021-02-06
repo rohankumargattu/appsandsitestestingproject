@@ -14,7 +14,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 
-public class MGUsingAppiumVerticalSwipe 
+public class MGUsingAppiumVerticalSwipe1
 {
 	public static void main(String[] args) throws Exception
 	{
