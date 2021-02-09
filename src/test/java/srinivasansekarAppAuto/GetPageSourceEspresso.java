@@ -15,6 +15,7 @@ public class GetPageSourceEspresso
 	{
 		//Start appium sever
 		Runtime.getRuntime().exec("cmd.exe /c start cmd.exe /k \"appium\"");
+		//Get appium server address
 		URL u=new URL("http://0.0.0.0:4723/wd/hub");
 		//Define desired capabilities related to device and app
 		DesiredCapabilities dc=new DesiredCapabilities();
