@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileSelector;
+import io.appium.java_client.Setting;
 import io.appium.java_client.android.AndroidDriver;
 
 public class MSMobileBy2ImageAppSite
@@ -18,7 +19,7 @@ public class MSMobileBy2ImageAppSite
 	public static void main(String[] args) throws Exception
 	{
 		//Convert image to Base64 string
-		File f=new File("E:\\batch249\\appiumexamples\\dialpic.png");
+		File f=new File("dial.png");
 		Path path=f.toPath();
 		String x=Base64.getEncoder().encodeToString(Files.readAllBytes(path));
         System.out.println(x);
@@ -29,11 +30,11 @@ public class MSMobileBy2ImageAppSite
 		//Define desired capabilities related to device and app
 		DesiredCapabilities dc=new DesiredCapabilities();
 		dc.setCapability(CapabilityType.BROWSER_NAME,"");
-	    dc.setCapability("deviceName","emulator-5554");
+	    dc.setCapability("deviceName","ce081718334a5b0b05");
 	    dc.setCapability("platformName","android");
-	    dc.setCapability("platformVersion","8.1.0");
-		dc.setCapability("appPackage","com.google.android.dialer");
-	    dc.setCapability("appActivity","com.google.android.dialer.extensions.GoogleDialtactsActivity");
+	    dc.setCapability("platformVersion","8.0.0");
+		dc.setCapability("appPackage","com.samsung.android.contacts");
+	    dc.setCapability("appActivity","com.android.dialer.DialtactsActivity");
 		//Launch app in device through appium server
 	    AndroidDriver driver;
 		while(2>1)
@@ -71,15 +72,15 @@ public class MSMobileBy2ImageAppSite
 		}
 		//Close app
 		driver.closeApp();
-		Thread.sleep(5000);
 		//Stop appium server
 		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
-		Runtime.getRuntime().exec("taskkill /F /IM cmd.exe"); 
+		Runtime.getRuntime().exec("taskkill /F /IM cmd.exe");
 	}
 }
 
 /*
 driver.setSetting(Setting.IMAGE_MATCH_THRESHOLD, 0.2);
+driver.setSetting(Setting.CHECK_IMAGE_ELEMENT_STALENESS,false);
 driver.setSetting(Setting.FIX_IMAGE_FIND_SCREENSHOT_DIMENSIONS, false);
 driver.setSetting(Setting.FIX_IMAGE_TEMPLATE_SIZE, true); 
 driver.setSetting(Setting.IMAGE_ELEMENT_TAP_STRATEGY,"w3cActions"/"touchActions"); 

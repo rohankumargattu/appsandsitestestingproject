@@ -29,5 +29,10 @@
     	<artifactId>json</artifactId>
     	<version>20190722</version>
 	</dependency>
+	<dependency>
+    	<groupId>com.applitools</groupId>
+    	<artifactId>eyes-appium-java4</artifactId>
+    	<version>4.14.0</version>
+	</dependency>
   </dependencies>
 </project>
