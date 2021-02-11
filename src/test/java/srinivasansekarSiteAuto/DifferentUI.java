@@ -43,7 +43,7 @@ public class DifferentUI
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("search_query")));
 			driver.findElement(By.name("search_query")).sendKeys("rangamma mangamma");
 			Thread.sleep(5000);
-			driver.findElement(By.xpath("(//button[@aria-label='Search'])[2]")).click();
+			driver.findElement(By.xpath("(//button[@aria-label='Search'])[1]")).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.partialLinkText("Rangamma Mangamma Video Song")));
 			driver.findElement(By.partialLinkText("Rangamma Mangamma Video Song")).click();
 			Thread.sleep(5000);
@@ -54,6 +54,10 @@ public class DifferentUI
 				s.click();
 			}
 			else if(s.exists("skipads.png")!=null) 
+			{
+				s.click();
+			}
+			if(s.exists("nothanks.png")!=null)
 			{
 				s.click();
 			}
