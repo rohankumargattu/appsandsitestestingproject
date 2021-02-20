@@ -47,21 +47,32 @@ public class LocationServices
 			Thread.sleep(20000);
 			//Get current location
 			Location current_location=driver.location();
-			System.out.println("Lattitue of current location is "+current_location.getLatitude());
-			System.out.println("Longitude of current location is "+current_location.getLongitude());
-			System.out.println("Altitude of current location is "+current_location.getAltitude());
+			double lattitude=current_location.getLatitude();
+			double longitude=current_location.getLongitude();
+			double altitude=current_location.getAltitude();
+			System.out.println("Lattitue of current location is "+lattitude);
+			System.out.println("Longitude of current location is "+longitude);
+			System.out.println("Altitude of current location is "+altitude);
 			//Set location using latitude, longitude and Altitude
 			//Set Location to Goa
-			Location l1=new Location(15.299326,74.123993,100000);
+			Location l1=new Location(15.299326,74.123993,2000);
 			driver.setLocation(l1);
 			Thread.sleep(5000);
 			//Set location to kerela
-			Location l2=new Location(10.850516,76.271080,100000);
+			Location l2=new Location(10.850516,76.271080,2000);
 			driver.setLocation(l2);
 			Thread.sleep(5000);
 			//Set location to minneapolis
-			Location l3=new Location(44.977753,-93.265015,100000);
+			Location l3=new Location(44.977753,-93.265015,2000);
 			driver.setLocation(l3);
+			Thread.sleep(5000);
+			//Set location to Namburu
+			Location l4=new Location(16.357460,80.532341,2000);
+			driver.setLocation(l4);
+			Thread.sleep(5000);
+			//Go back to current location
+			Location l5=new Location(lattitude,longitude,altitude);
+			driver.setLocation(l5);
 			Thread.sleep(5000);
 		}
 		catch(Exception e)
